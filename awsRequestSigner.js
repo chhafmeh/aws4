@@ -28563,7 +28563,7 @@ RequestSigner.prototype.formatPath = function() {
 
 aws4.RequestSigner = RequestSigner
 
-aws4.sign = function(request, credentials) {
+function sign(request, credentials) { 
   return new RequestSigner(request, credentials).sign()
 }
 
